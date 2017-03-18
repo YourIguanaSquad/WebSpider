@@ -1,3 +1,5 @@
 TODO:
 
-Add a better banner.
+#Add a better banner ~ DONE
+
+NOTHING yet.

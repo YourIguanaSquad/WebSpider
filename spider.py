@@ -11,6 +11,7 @@ import urllib2
 import time
 import MySQLdb
 
+
 class WebSpider():
 
 	def __init__(self, webSite, depth, proxyhost, proxyuser, proxypassword, proxyport,proxysecure="http"):
@@ -197,6 +198,27 @@ class WebSpider():
 
 
 if __name__ == "__main__":
+	print \
+"""
+           ____                      ,
+          /---.'.__             ____//
+               '--.\           /.---'
+          _______  \\         //
+        /.------.\  \|      .'/  ______
+       //  ___  \ \ ||/|\  //  _/_----.\__
+      |/  /.-.\  \ \:|< >|// _/.'..\   '--'
+         //   \'. | \'.|.'/ /_/ /  \\
+        //     \ \_\/" ' ~\-'.-'    \\
+       //       '-._| :H: |'-.__     \\
+      //           (/'==='\)'-._\     ||
+      ||                        \\    \|
+      ||                         \\    '
+      |/                          \\
+                                   ||
+                                   ||
+                                   \\
+"""
+
 	parser = argparse.ArgumentParser(description="Python WebSpider")
 	parser.add_argument("-t", "--target", required=True,  help="Target website")
 	parser.add_argument("-d", "--depth", required=False, help="Number of links to crawl")
@@ -222,4 +244,3 @@ if __name__ == "__main__":
 		print sys.exc_info()[0]
 		print sys.exc_info()[1]
 		print sys.exc_info()[2]
-

@@ -11,6 +11,26 @@ import urllib2
 import time
 import MySQLdb
 
+def banner():
+"""
+           ____                      ,
+          /---.'.__             ____//
+               '--.\           /.---'
+          _______  \\         //
+        /.------.\  \|      .'/  ______
+       //  ___  \ \ ||/|\  //  _/_----.\__
+      |/  /.-.\  \ \:|< >|// _/.'..\   '--'
+         //   \'. | \'.|.'/ /_/ /  \\
+        //     \ \_\/" ' ~\-'.-'    \\
+       //       '-._| :H: |'-.__     \\
+      //           (/'==='\)'-._\     ||
+      ||                        \\    \|
+      ||                         \\    '
+      |/                          \\
+                                   ||
+                                   ||
+                                   \\
+"""
 class WebSpider():
 
 	def __init__(self, webSite, depth, proxyhost, proxyuser, proxypassword, proxyport,proxysecure="http"):
